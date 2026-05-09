@@ -1,0 +1,6 @@
+{
+  "name": "My Fitness",
+  "description": "A structured mobile workout companion featuring guided flows, rest timers, and progress tracking based on the My Fitness plan.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
