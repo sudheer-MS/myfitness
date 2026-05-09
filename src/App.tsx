@@ -951,7 +951,7 @@ function ActiveSession({ session, onComplete, onCancel, updateSession, settings 
               <div className="bg-[#141414] aspect-[4/3] rounded-3xl border border-white/5 flex items-center justify-center overflow-hidden relative mb-6 group shrink-0">
                 {current.image ? (
                   <img 
-                    src={current.image} 
+                    src={current.image.startsWith('/') ? import.meta.env.BASE_URL + current.image.slice(1) : current.image} 
                     alt={current.name} 
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     referrerPolicy="no-referrer"
